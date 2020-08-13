@@ -110,13 +110,10 @@ and should return a string in the format `name} gave the restaurant a {rating}, 
 For example, if getLastReview is invoked passing the reviews array it will return `Reyna gave the restaurant a 3.5 star review and their feedback was: "this place is chill with really cool people, great for getting work done on weekdays"`.
 */
 function getLastReview(arr){
-    let review = arr[-1];
-    console.log(arr[-1]); 
+    let review = arr[arr.length-1];
     return `${review.name} gave the resturant a ${review.rating} star review and their feedback was: ${review.feedback}`
   }
-//console.log(getLastReview(reviews));
-
-getLastReview(reviews);
+console.log(getLastReview(reviews));
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
 /** STRETCH 1: Write a function called `getReviewByRating` that returns an array containing all reviews in a certain range. Your function should accept: 
